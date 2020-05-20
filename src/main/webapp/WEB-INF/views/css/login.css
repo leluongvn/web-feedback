@@ -4,6 +4,7 @@
 }
 .form-login {
     width: 400px;
+    height: 300px;
     padding: 32px;
     display: flex;
     align-items: center;
@@ -40,4 +41,8 @@
     margin-left: 8px;
     height: 30px;
     width: 100px;
+}
+.container-login-form {
+    display: flex;
+    justify-content: center;
 }
