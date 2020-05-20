@@ -12,13 +12,5 @@
   <table-filter match-catalog="db_feedback" match-name="NoiDungKhoaHoc"/>
   <table-filter match-catalog="db_feedback" match-name="PhanHoiFeedBack"/>
   <table-filter match-catalog="db_feedback" match-name="TaiKhoan"/>
-  <table-filter match-catalog="db_feedback" match-name="chi_tiet_feedback_offline"/>
-  <table-filter match-catalog="db_feedback" match-name="chi_tiet_feedback_online"/>
-  <table-filter match-catalog="db_feedback" match-name="chi_tiet_feedback_seminar"/>
-  <table-filter match-catalog="db_feedback" match-name="danh_sach_lop_hoc"/>
-  <table-filter match-catalog="db_feedback" match-name="khoa_hoc"/>
-  <table-filter match-catalog="db_feedback" match-name="lop_hoc"/>
-  <table-filter match-catalog="db_feedback" match-name="noi_dung_khoa_hoc"/>
-  <table-filter match-catalog="db_feedback" match-name="phan_hoi_feed_back"/>
-  <table-filter match-catalog="db_feedback" match-name="tai_khoan"/>
+  <table-filter match-catalog="db_feedback" match-name="UserRole"/>
 </hibernate-reverse-engineering>

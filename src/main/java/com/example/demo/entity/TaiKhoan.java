@@ -1,5 +1,5 @@
 package com.example.demo.entity;
-// Generated May 20, 2020 1:50:13 PM by Hibernate Tools 4.3.5.Final
+// Generated May 20, 2020 3:00:35 PM by Hibernate Tools 4.3.5.Final
 
 import java.util.HashSet;
 import java.util.Set;
@@ -7,6 +7,8 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
@@ -18,6 +20,7 @@ import javax.persistence.Table;
 public class TaiKhoan implements java.io.Serializable {
 
 	private String email;
+	private UserRole userRole;
 	private String tkPassword;
 	private String tkHovaTen;
 	private String tkSdt;
@@ -35,10 +38,11 @@ public class TaiKhoan implements java.io.Serializable {
 		this.email = email;
 	}
 
-	public TaiKhoan(String email, String tkPassword, String tkHovaTen, String tkSdt, String tkDiaChi, String tkGioiTinh,
-			String tkTrangThai, Set<LopHoc> lopHocs, Set<DanhSachLopHoc> danhSachLopHocs,
+	public TaiKhoan(String email, UserRole userRole, String tkPassword, String tkHovaTen, String tkSdt, String tkDiaChi,
+			String tkGioiTinh, String tkTrangThai, Set<LopHoc> lopHocs, Set<DanhSachLopHoc> danhSachLopHocs,
 			Set<PhanHoiFeedBack> phanHoiFeedBacks) {
 		this.email = email;
+		this.userRole = userRole;
 		this.tkPassword = tkPassword;
 		this.tkHovaTen = tkHovaTen;
 		this.tkSdt = tkSdt;
@@ -59,6 +63,16 @@ public class TaiKhoan implements java.io.Serializable {
 
 	public void setEmail(String email) {
 		this.email = email;
+	}
+
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "Ur_Ma")
+	public UserRole getUserRole() {
+		return this.userRole;
+	}
+
+	public void setUserRole(UserRole userRole) {
+		this.userRole = userRole;
 	}
 
 	@Column(name = "Tk_Password", length = 20)
