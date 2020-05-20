@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.org/dtd/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+  <table-filter match-catalog="db_feedback" match-name="ChiTietFeedback_Offline"/>
+  <table-filter match-catalog="db_feedback" match-name="ChiTietFeedback_Online"/>
+  <table-filter match-catalog="db_feedback" match-name="ChiTietFeedback_Seminar"/>
+  <table-filter match-catalog="db_feedback" match-name="DanhSachLopHoc"/>
+  <table-filter match-catalog="db_feedback" match-name="Feedback"/>
+  <table-filter match-catalog="db_feedback" match-name="KhoaHoc"/>
+  <table-filter match-catalog="db_feedback" match-name="LopHoc"/>
+  <table-filter match-catalog="db_feedback" match-name="NoiDungKhoaHoc"/>
+  <table-filter match-catalog="db_feedback" match-name="PhanHoiFeedBack"/>
+  <table-filter match-catalog="db_feedback" match-name="TaiKhoan"/>
+</hibernate-reverse-engineering>

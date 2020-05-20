@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.form-login {
+    width: 400px;
+    padding: 32px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: black solid 1px;
+}
+.label-login {
+    font-size: 25;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 16px;
+}
+.element {
+    width: 300px;
+    height: 30px;
+    margin-bottom: 16px;
+}
+.button-login {
+    color: grey;
+    background-color: white;
+    border: grey solid 1px;
+    font-weight: bold;
+    margin-right: 8px;
+    margin-left: 8px;
+    height: 30px;
+    width: 100px;
+}
+.button-signup {
+    color: white;
+    background-color: gray;
+    border: 0;
+    margin-right: 8px;
+    margin-left: 8px;
+    height: 30px;
+    width: 100px;
+}
